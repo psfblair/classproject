@@ -46,7 +46,7 @@
 
     <target name="deploy" depends="clean, jar" description="Create release package">
         <copy file="${dist.name}" todir="${deploy.dir}" />
-        <copy file="${bin.dir}/run.bat" todir="${deploy.dir}" />
-        <fixcrlf file="${bin.dir}/run.sh" eol="lf" todir="${deploy.dir}" />
+        <fixcrlf file="${bin.dir}/run.bat" eol="dos" todir="${deploy.dir}" />
+        <fixcrlf file="${bin.dir}/run.sh" eol="unix" todir="${deploy.dir}" />
     </target>
 </project>
