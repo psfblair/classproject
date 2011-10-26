@@ -1,0 +1,44 @@
+<project default="build">
+	<property name="src.dir" value="src" />
+	<property name="lib.dir" value="lib" />
+	<property name="build.dir" value="build" />
+	<property name="classes.dir" value="${build.dir}/classes" />
+	<property name="jars.dir" value="${build.dir}/jars" />
+	<property name="dist.name" value="classproject.jar" />  <!--This is the name of our distribution file --> 
+
+	<property name="junit.jar" value="${lib.dir}/junit4.8.2/junit-4.8.2.jar" />
+	<property name="classpath" value="${junit.jar}" />
+	
+	<target name="clean" description="Erase all generated files">
+		<delete dir="${build.dir}" failonerror="true" />
+	</target>
+
+	<target name="compile">
+		<mkdir dir="${classes.dir}" />
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" classpath="${classpath}" />
+	</target>
+	
+	<target name="test" depends="compile">
+		<junit haltonfailure="true">
+			<classpath path="${junit.jar};${classes.dir}" />
+			<formatter type="brief" usefile="false" />
+			<batchtest>
+			    <fileset dir="${src.dir}">
+			      <include name="**/*Test*.java" />
+			    </fileset>
+			</batchtest>
+		</junit>
+	</target>
+	
+	<target name="build" depends="test" description="Full build and test">
+	</target>
+	
+	<target name="jar" depends="build">
+		<mkdir dir="${jars.dir}" />
+		<jar destfile="${dist.name}" basedir="${classes.dir}" />
+	</target>
+	
+	<target name="release" depends="clean, jar" description="Create release package">
+		<copy file="${dist.name}" todir="${build.dir}" />
+	</target>
+</project>
