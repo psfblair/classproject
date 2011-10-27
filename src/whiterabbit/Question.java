@@ -29,5 +29,19 @@ public class Question {
 		// TODO Auto-generated method stub
 		answers.add(answerText);
 	}
+	
+	@Override
+	public String toString(){
+		String display = question + "\n";
+		for(String answer: answers){
+			
+			display += answer;
+			display += "\n";
+		}
+	
+		return display;
+		
+	}
+
 
 }
