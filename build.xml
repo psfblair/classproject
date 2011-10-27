@@ -45,11 +45,12 @@
 	</target>
 
     <target name="deploy" depends="clean, jar" description="Create release package">
-        <delete dir="${deploy.dir}" file="${dist.name}"/>
+        <delete>
+            <fileset dir="${deploy.dir}" includes="run.*"/>
+            <fileset dir="${deploy.dir}" includes="${dist.name}"/>
+        </delete>
         <copy file="${dist.name}" todir="${deploy.dir}" />
-        <delete dir="${deploy.dir}" file="run.bat"/>
         <fixcrlf file="${bin.dir}/run.bat" eol="dos" todir="${deploy.dir}" />
-        <delete dir="${deploy.dir}" file="run.sh"/>
         <fixcrlf file="${bin.dir}/run.sh" eol="unix" todir="${deploy.dir}" />
     </target>
 </project>
