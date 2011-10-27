@@ -20,8 +20,12 @@ public class JeffersonAirplane {
 
     void run() {
         printer.print(WELCOME);
-        Question question = new Question("I am the first question?");
-        printer.print(question.getQuestion());
+        String test1 = "How sure are you that you want to be doing Agile development?";
+        Question question = new Question(test1);
+        question.addAnswer("A) very sure.");
+        question.addAnswer("B) kind of sure.");
+        question.addAnswer("C) Not very sure at all.");
+        printer.print(question.toString());
     }
 
     static  class Printer {
