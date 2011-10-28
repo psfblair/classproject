@@ -9,7 +9,7 @@ public class Question {
 
 	String question;
 	List<String> answers;
-    HashMap<String, Integer> answers_with_scores;
+    HashMap<String, String> answers_with_scores;
 	
 	
 	public List<String> getAnswers(){
@@ -19,22 +19,21 @@ public class Question {
 	public Question(String questionText) {
 		question = questionText;
 		answers = new ArrayList<String>();
-		answers_with_scores = new HashMap<String, Integer>();
+		answers_with_scores = new HashMap<String, String>();
 	}
 	
 
 	public String getQuestion() {
-		// TODO Auto-generated method stub
 		return question;
 	}
 
 
-    public void addAnswer(String answerText, int value) {
+    public void addAnswer(String answerText, String response) {
         answers.add(answerText);
-        answers_with_scores.put(answerText.substring(0,1), value);
+        answers_with_scores.put(answerText.substring(0,1), response);
     }
 
-    public int score(String answer) {
+    public String score(String answer) {
         return answers_with_scores.get(answer);
     }
 	

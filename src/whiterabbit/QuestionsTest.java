@@ -18,7 +18,7 @@ public class QuestionsTest {
 	@Test
 	public void shouldShowAnswer(){
 		Question question = new Question("New question!");
-		question.addAnswer("Whatever", 1);
+		question.addAnswer("Whatever", "1");
 
 		assertEquals("Whatever", question.getAnswers().get(0));
 	}
@@ -26,7 +26,7 @@ public class QuestionsTest {
 	@Test
 	public void shouldPrintQuestionAndAnswers(){
 		Question question = new Question("Question");
-		question.addAnswer("Answer", 1);
+		question.addAnswer("Answer", "1");
 
 		assertEquals("Question\nAnswer\n", question.toString());
 	}
@@ -34,7 +34,7 @@ public class QuestionsTest {
 	@Test
 	public void shouldShowOneAnswer() {
 		Question question = new Question("");
-		question.addAnswer("Answer", 1);
+		question.addAnswer("Answer", "1");
 		
 		assertEquals("Answer", question.getAnswers().get(0));
 	}
@@ -42,9 +42,9 @@ public class QuestionsTest {
 	@Test 
 	public void shouldShowThreeAnswers(){
 		Question question = new Question("");
-		question.addAnswer("Answer1", 1);
-		question.addAnswer("Answer2", 1);
-		question.addAnswer("Answer3", 1);
+		question.addAnswer("Answer1", "1");
+		question.addAnswer("Answer2", "1");
+		question.addAnswer("Answer3", "1");
 		
 		assertEquals("Answer1", question.getAnswers().get(0));
 		assertEquals("Answer2", question.getAnswers().get(1));
@@ -54,11 +54,10 @@ public class QuestionsTest {
     @Test
     public void returnTheScoreAssociatedWithUsersResponse() {
         Question question = new Question("Do you haz cheeseburger?");
-        question.addAnswer("A) yes", 25);
-        question.addAnswer("B) yes", 2);
+        question.addAnswer("A) yes", "You should have said other yes");
+        question.addAnswer("B) yes", "Thank you, good thinking.");
         
-        
-        assertEquals(25, question.score("A"));
-        assertEquals(2, question.score("B"));
+        assertEquals("You should have said other yes", question.score("A"));
+        assertEquals("Thank you, good thinking.", question.score("B"));
     }
 }

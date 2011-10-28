@@ -64,15 +64,15 @@ private final Printer printer;
     void run() {
         printer.print(WELCOME);
         Question question = new Question(test1);
-        question.addAnswer(ANSWER1A, 3);
-        question.addAnswer(ANSWER1B, 5);
-        question.addAnswer(ANSWER1C, 10);
+        question.addAnswer(ANSWER1A, "");
+        question.addAnswer(ANSWER1B, "");
+        question.addAnswer(ANSWER1C, "");
         printer.print(question.toString());
 
         String answer = reado.get();
         
-        int response = question.score(answer);
-        printer.print("You got a " + response + " out of 10!");
+        String response = question.score(answer);
+        printer.print("Thank you!");
     }
 
 
