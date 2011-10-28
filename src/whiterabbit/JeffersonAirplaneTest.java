@@ -1,6 +1,5 @@
 package whiterabbit;
 
-import com.sun.xml.internal.xsom.impl.scd.Iterators;
 import org.junit.Before;
 import org.junit.Test;
 
