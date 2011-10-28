@@ -2,3 +2,8 @@ build/
 .svn
 classproject.jar
 out/
+*~
+*.txt
+# For emacs:
+\#*
+.\#*
