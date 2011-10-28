@@ -72,7 +72,7 @@ private final Printer printer;
         String answer = reado.get();
         
         int response = question.score(answer);
-        printer.print("You got a " + response + "out of 10!");
+        printer.print("You got a " + response + " out of 10!");
     }
 
 
