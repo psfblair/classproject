@@ -90,7 +90,7 @@ private final Printer printer;
         }
 
         public String get() {
-            printer.print(">");
+            printer.print("Please enter your answer below:");
             String s = new Scanner(System.in).nextLine();
             printer.print("Thank you!");
             return s;
