@@ -52,14 +52,13 @@ public class QuestionsTest {
 	}
 
     @Test
-    public void something() {
+    public void returnTheScoreAssociatedWithUsersResponse() {
         Question question = new Question("Do you haz cheeseburger?");
         question.addAnswer("A) yes", 25);
+        question.addAnswer("B) yes", 2);
         
-        int response = question.score("A");
         
-        assertEquals(25, response);
+        assertEquals(25, question.score("A"));
+        assertEquals(2, question.score("B"));
     }
-
-    
 }

@@ -21,7 +21,7 @@ public class JeffersonAirplaneTest {
 
         JeffersonAirplane.ReadoDude reado = new JeffersonAirplane.ReadoDude(printer) {
             public String get() {
-                return "";
+                return "A";
             }
         };
 
