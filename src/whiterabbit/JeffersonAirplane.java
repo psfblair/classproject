@@ -27,21 +27,16 @@ public class JeffersonAirplane {
             "projects. How you choose to deal with these will tell me if you're truly \n" +
             "ready to be on an Agile team.\n\n";
 
-    String test1 = "You’ve just been name project manager on the new \n" +
-"ASTRO project that is slated to start next week.\n"+
-            "On your team is Tom the Tester, \n" +
-"David, Daniel,and Debbie the Developers,\n"+
-            "Bob the Business Analyst, and Uma the UX Designer.\n"+
-"A great group of highly experienced people\n"+
-            "and some of the best in the company.\n"+
+    String test1 = "You've just been name project manager on the new ASTRO project that is slated to start next week.\n"+
+            "On your team is Tom the Tester, David, Daniel,and Debbie the Developers,\n"+
+            "Bob the Business Analyst, and Uma the UX Designer. A great group of highly experienced people\n"+
+            "and some of the best in the company.\n\n"+
 
-"However...turns out Tom is currently located in building\n"+
-"C down the road, David and Daniel and Debbie are together \n"+
-"but one floor down, Bob’s cube is right next to you in \n"+
-"building F, and Uma has a floating desk and care move anywhere.\n"+
-"And Charlie the Customer is located on the 6th floor of \n"+
-"building D.  Below are the available space/configuration options.\n"+
-"It’s up to you to choose the best working set up for your team.";
+"However...turns out Tom is currently located in building C down the road, David and Daniel\n" +
+"and Debbie are together but one floor down, Bob's cube is right next to you in \n"+
+"building F, and Uma has a floating desk and care move anywhere. And Charlie the Customer is \n" +
+"located on the 6th floor of building D.  Below are the available space/configuration options.\n"+
+"It's up to you to choose the best working set up for your team.\n";
   
 private final Printer printer;
     private ReadoDude reado;
