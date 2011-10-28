@@ -71,7 +71,7 @@ private final Printer printer;
 "\n" +
 "And don't forget to send this to your friends!\n";
 
-        String RESPONSE_2 = "Option B is it.\n" +
+        String RESPONSE_2 = "Option B it is.\n" +
 "Wow, you really don't like your developers do you?\n" + 
 "Making them sit at an old conference room table and chairs?\n" +
 "Not a great way to kick off a project.  Charles can be there\n" +
@@ -129,7 +129,7 @@ private final Printer printer;
         }
 
         public String get() {
-            printer.print("Answer");
+            printer.print("Answer:");
             String s = new Scanner(System.in).nextLine();
             return s;
         }
