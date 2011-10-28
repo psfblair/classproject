@@ -33,7 +33,7 @@ public class JeffersonAirplane {
         printer.print(question.toString());
     }
 
-    static  class Printer {
+    static class Printer {
         public void print(String toPrint){
             System.out.println(toPrint);
         }
