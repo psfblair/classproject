@@ -32,12 +32,15 @@ public class JeffersonAirplane {
         printer.print(WELCOME);
         String test1 = "How sure are you that you want to be doing Agile development?";
         Question question = new Question(test1);
-        question.addAnswer("A) very sure.");
-        question.addAnswer("B) kind of sure.");
-        question.addAnswer("C) Not very sure at all.");
+        question.addAnswer("A) very sure.", 10);
+        question.addAnswer("B) kind of sure.", 5);
+        question.addAnswer("C) Not very sure at all.", 0);
         printer.print(question.toString());
 
         String answer = reado.get();
+        
+        int response = question.score(answer);
+        printer.print("You got a " + response);
     }
 
 

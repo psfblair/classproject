@@ -25,10 +25,14 @@ public class Question {
 	}
 
 
-	public void addAnswer(String answerText) {
-		// TODO Auto-generated method stub
-		answers.add(answerText);
-	}
+    public void addAnswer(String answerText, int value) {
+        // TODO Auto-generated method stub
+        answers.add(answerText);
+    }
+
+    public int score(String answer) {
+        return 25;
+    }
 	
 	@Override
 	public String toString(){
@@ -40,8 +44,5 @@ public class Question {
 		}
 	
 		return display;
-		
 	}
-
-
 }
