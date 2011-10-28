@@ -61,12 +61,38 @@ private final Printer printer;
         new JeffersonAirplane().run();
 	}
 
+    String RESPONSE_1 = "Your score is: 3 on 10.  Not great.  Maybe you should try reading...\n" +
+"\n" +
+"James Shore: The Art of Agile Development: \nSit Together http://bit.ly/vgbymg\n" +
+"\n" +
+"And don’t forget to send this to your friends!\n";
+
+        String RESPONSE_2 = "Option B is it.\n" +
+"Wow, you really don’t like your developers do you?\n" + 
+"Making them sit at an old conference room table and chairs?\n" +
+"Not a great way to kick off a project.  Charles can be there\n" +
+"a fair amount, but all he’ll hear about it the need for new equipment.\n" +
+"\n" +
+"Your score is:  5 of 10.  You might need to start with a sharper axe next time.\n" +
+"\n" +
+"The Importance of a Good Chair at Work http://bit.ly/rBcx6O\n" +
+"\n" +
+"And don’t forget to send this to your friends!\n";
+
+    String RESPONSE_3 = "Yay!  Good choice!\n"+ "Yes, it will take a few days to move the developers and \n"+
+"Tom will have some travel time but you’ll be one team,\n" +
+"close to the customer and in a great space!"+
+"\n"+
+"Good work!  Your score is 10 on 10!\n"+
+"\n"+
+"And don’t forget to send this to your friends!\n";
+
     void run() {
         printer.print(WELCOME);
         Question question = new Question(test1);
-        question.addAnswer(ANSWER1A, "");
-        question.addAnswer(ANSWER1B, "");
-        question.addAnswer(ANSWER1C, "");
+        question.addAnswer(ANSWER1A, RESPONSE_1);
+        question.addAnswer(ANSWER1B, RESPONSE_2);
+        question.addAnswer(ANSWER1C, RESPONSE_3);
         printer.print(question.toString());
 
         String answer = reado.get();
