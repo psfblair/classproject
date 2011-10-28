@@ -69,10 +69,10 @@ private final Printer printer;
 "\n" +
 "James Shore: The Art of Agile Development: \nSit Together http://bit.ly/vgbymg\n" +
 "\n" +
-"And don’t forget to send this to your friends!\n";
+"And don't forget to send this to your friends!\n";
 
         String RESPONSE_2 = "Option B is it.\n" +
-"Wow, you really don’t like your developers do you?\n" + 
+"Wow, you really don't like your developers do you?\n" + 
 "Making them sit at an old conference room table and chairs?\n" +
 "Not a great way to kick off a project.  Charles can be there\n" +
 "a fair amount, but all he’ll hear about it the need for new equipment.\n" +
@@ -81,7 +81,7 @@ private final Printer printer;
 "\n" +
 "The Importance of a Good Chair at Work http://bit.ly/rBcx6O\n" +
 "\n" +
-"And don’t forget to send this to your friends!\n";
+"And don't forget to send this to your friends!\n";
 
     String RESPONSE_3 = "Yay!  Good choice!\n"+ "Yes, it will take a few days to move the developers and \n"+
 "Tom will have some travel time but you’ll be one team,\n" +
@@ -89,7 +89,7 @@ private final Printer printer;
 "\n"+
 "Good work!  Your score is 10 on 10!\n"+
 "\n"+
-"And don’t forget to send this to your friends!\n";
+"And don't forget to send this to your friends!\n";
 
     void run() {
         printer.print(WELCOME);
@@ -129,9 +129,8 @@ private final Printer printer;
         }
 
         public String get() {
-            printer.print(">");
+            printer.print("Answer");
             String s = new Scanner(System.in).nextLine();
-            printer.print("Thank you!");
             return s;
         }
     }
