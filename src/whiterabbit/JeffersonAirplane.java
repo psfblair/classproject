@@ -1,9 +1,11 @@
 package whiterabbit;
 
-import com.sun.codemodel.internal.JAnnotationArrayMember;
-
 public class JeffersonAirplane {
-    public static final String WELCOME = "Greetings, Earthling!";
+    public static final String WELCOME = "Welcome.  My name is Hume.  I am an educational computer simulation.  " +
+            "I’m your guide to the Agile world.\n\nIn order the determine if Agile is right for you, I need to know " +
+            "how you’ll deal with the following scenarios. These are real-life experiences from Agile projects.  " +
+            "How you choose to deal with these will tell me if you’re truly ready to be on an Agile team.";
+
     private final Printer printer;
 
     public JeffersonAirplane() {

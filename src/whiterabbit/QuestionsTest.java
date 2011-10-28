@@ -11,27 +11,23 @@ public class QuestionsTest {
 	@Test
 	public void displayQuestion() {
 		Question question = new Question("I'm a question?");
-		
-		
+
 		assertEquals("I'm a question?", question.getQuestion());
-		
 	}
 	
 	@Test
 	public void shouldShowAnswer(){
-		
 		Question question = new Question("New question!");
 		question.addAnswer("Whatever");
-		
+
 		assertEquals("Whatever", question.getAnswers().get(0));
-		
 	}
 	
 	@Test
 	public void shouldPrintQuestionAndAnswers(){
 		Question question = new Question("Question");
 		question.addAnswer("Answer");
-		
+
 		assertEquals("Question\nAnswer\n", question.toString());
 	}
 	
