@@ -4,6 +4,7 @@ import java.util.Scanner;
 import whiterabbit.JeffersonAirplane.Printer;
 
 public class JeffersonAirplane {
+				
     private static final String ANSWER1C = 
 
 "C) Team Room Orange - located on the 2nd floor in building D (same building\n" +
@@ -66,17 +67,23 @@ private final Printer printer;
 
     void run() {
         printer.print(WELCOME);
+        paginate();
         Question question = new Question(test1);
-        question.addAnswer(ANSWER1A, 3);
+        question.addAnswer(ANSWER1A, 10);
         question.addAnswer(ANSWER1B, 5);
-        question.addAnswer(ANSWER1C, 10);
+        question.addAnswer(ANSWER1C, 0);
         printer.print(question.toString());
 
         String answer = reado.get();
         
         int response = question.score(answer);
-        printer.print("You got a " + response + "out of 10!");
+        printer.print("You got a " + response);
     }
+
+	private void paginate() {
+		printer.print("Please hit RETURN to continue...");
+        new Scanner(System.in).nextLine();
+	}
 
 
     static class Printer {
@@ -93,7 +100,7 @@ private final Printer printer;
         }
 
         public String get() {
-            printer.print("Please enter your answer below:");
+            printer.print(">");
             String s = new Scanner(System.in).nextLine();
             printer.print("Thank you!");
             return s;
