@@ -1,5 +1,7 @@
 package whiterabbit;
 
+import java.util.Scanner;
+
 public class JeffersonAirplane {
     public static final String WELCOME = "\n\n" +
             "Welcome.  My name is Hume.  I am an educational computer simulation. \n" +
@@ -10,13 +12,16 @@ public class JeffersonAirplane {
             "ready to be on an Agile team.\n\n";
 
     private final Printer printer;
+    private ReadoDude reado;
 
     public JeffersonAirplane() {
         printer = new Printer();
+        reado = new ReadoDude(printer);
     }
 
-    public JeffersonAirplane(Printer printer) {
+    public JeffersonAirplane(Printer printer, ReadoDude reado) {
         this.printer = printer;
+        this.reado = reado;
     }
 
     public static void main(String[] args) {
@@ -31,11 +36,29 @@ public class JeffersonAirplane {
         question.addAnswer("B) kind of sure.");
         question.addAnswer("C) Not very sure at all.");
         printer.print(question.toString());
+
+        String answer = reado.get();
     }
+
 
     static class Printer {
         public void print(String toPrint){
             System.out.println(toPrint);
+        }
+    }
+
+    static class ReadoDude {
+        private Printer printer;
+
+        public ReadoDude(Printer printer) {
+            this.printer = printer;
+        }
+
+        public String get() {
+            printer.print(">");
+            String s = new Scanner(System.in).nextLine();
+            printer.print("Thank you!");
+            return s;
         }
     }
 }

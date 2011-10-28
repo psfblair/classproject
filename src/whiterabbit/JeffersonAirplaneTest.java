@@ -14,15 +14,22 @@ public class JeffersonAirplaneTest {
 
     @Before
     public void setUp() throws Exception {
-        application = new JeffersonAirplane(new JeffersonAirplane.Printer() {
+        JeffersonAirplane.Printer printer = new JeffersonAirplane.Printer() {
             public void print(String toPrint) {
                 printed.add(toPrint);
             }
-        });
+        };
 
+        JeffersonAirplane.ReadoDude reado = new JeffersonAirplane.ReadoDude(printer) {
+            public String get() {
+                return "";
+            }
+        };
+
+        application = new JeffersonAirplane(printer, reado);
     }
 
-    ArrayList<String>printed = new ArrayList<String>();
+    ArrayList<String> printed = new ArrayList<String>();
 
     @Test
     public void printerIsAskedToPrintAGreeting() {
