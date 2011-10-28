@@ -59,9 +59,7 @@ public class QuestionsTest {
         int response = question.score("A");
         
         assertEquals(25, response);
-    } 
+    }
+
+    
 }
-
-
-
-
