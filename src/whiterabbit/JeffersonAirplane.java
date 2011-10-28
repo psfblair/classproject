@@ -1,10 +1,13 @@
 package whiterabbit;
 
 public class JeffersonAirplane {
-    public static final String WELCOME = "Welcome.  My name is Hume.  I am an educational computer simulation.  " +
-            "I’m your guide to the Agile world.\n\nIn order the determine if Agile is right for you, I need to know " +
-            "how you’ll deal with the following scenarios. These are real-life experiences from Agile projects.  " +
-            "How you choose to deal with these will tell me if you’re truly ready to be on an Agile team.";
+    public static final String WELCOME = "\n\n" +
+            "Welcome.  My name is Hume.  I am an educational computer simulation. \n" +
+            "I'm your guide to the Agile world.\n\n" +
+            "In order the determine if Agile is right for you, I need to know how you'll \n" +
+            "deal with the following scenarios. These are real-life experiences from Agile \n" +
+            "projects. How you choose to deal with these will tell me if you're truly \n" +
+            "ready to be on an Agile team.\n\n";
 
     private final Printer printer;
 

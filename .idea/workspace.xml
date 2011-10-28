@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a81df1ad-1447-4c2e-8d9c-377189d384a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/whiterabbit/JeffersonAirplaneTest.java" afterPath="$PROJECT_DIR$/src/whiterabbit/JeffersonAirplaneTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/whiterabbit/JeffersonAirplane.java" afterPath="$PROJECT_DIR$/src/whiterabbit/JeffersonAirplane.java" />
     </list>
     <ignored path="classproject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,10 +62,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JeffersonAirplane.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="JeffersonAirplane.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/whiterabbit/JeffersonAirplane.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="44" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
+            <state line="19" column="5" selection-start="776" selection-end="776" vertical-scroll-proportion="0.5987395">
               <folding />
             </state>
           </provider>
@@ -74,16 +74,16 @@
       <file leaf-file-name="JeffersonAirplaneTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/whiterabbit/JeffersonAirplaneTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="2" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+            <state line="25" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuestionsTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="QuestionsTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/whiterabbit/QuestionsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.12605043">
+            <state line="53" column="0" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -107,8 +107,9 @@
         <option value="$PROJECT_DIR$/bin/runClassproject.sh" />
         <option value="$PROJECT_DIR$/bin/run.bat" />
         <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/whiterabbit/JeffersonAirplane.java" />
+        <option value="$PROJECT_DIR$/src/whiterabbit/QuestionsTest.java" />
         <option value="$PROJECT_DIR$/src/whiterabbit/JeffersonAirplaneTest.java" />
+        <option value="$PROJECT_DIR$/src/whiterabbit/JeffersonAirplane.java" />
       </list>
     </option>
   </component>
@@ -208,7 +209,7 @@
       <recent name="whiterabbit" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JeffersonAirplaneTest">
+  <component name="RunManager" selected="JUnit.whiterabbit in Classproject">
     <configuration default="false" name="JeffersonAirplaneTest.printerIsAskedToPrintTheQuestion" type="JUnit" factoryName="JUnit" temporary="true">
       <extension name="coverage" enabled="false" merge="false">
         <pattern>
@@ -279,6 +280,34 @@
       <option name="MAIN_CLASS_NAME" value="whiterabbit.QuestionsTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="whiterabbit in Classproject" type="JUnit" factoryName="JUnit" temporary="true">
+      <extension name="coverage" enabled="false" merge="false">
+        <pattern>
+          <option name="PATTERN" value="whiterabbit.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Classproject" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="whiterabbit" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -406,10 +435,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.JeffersonAirplaneTest.printerIsAskedToPrintTheQuestion" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.JeffersonAirplaneTest" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.QuestionsTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.whiterabbit in Classproject" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -475,7 +505,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Oops should be destDir not toDir" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add actual welcome text." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -495,6 +525,7 @@
     <MESSAGE value="Make deploy always replace files on USB stick." />
     <MESSAGE value="Oops don't delete the whole directory" />
     <MESSAGE value="Oops should be destDir not toDir" />
+    <MESSAGE value="Add actual welcome text." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -530,23 +561,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/whiterabbit/JeffersonAirplane.java">
+    <entry file="file://$PROJECT_DIR$/src/whiterabbit/QuestionsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="44" selection-start="694" selection-end="694" vertical-scroll-proportion="0.0">
+        <state line="53" column="0" selection-start="1232" selection-end="1232" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/whiterabbit/JeffersonAirplaneTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="627" selection-end="627" vertical-scroll-proportion="0.0">
+        <state line="25" column="0" selection-start="624" selection-end="624" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/whiterabbit/QuestionsTest.java">
+    <entry file="file://$PROJECT_DIR$/src/whiterabbit/JeffersonAirplane.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="106" selection-end="106" vertical-scroll-proportion="0.12605043">
+        <state line="19" column="5" selection-start="776" selection-end="776" vertical-scroll-proportion="0.5987395">
           <folding />
         </state>
       </provider>
