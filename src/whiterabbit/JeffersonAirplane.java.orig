@@ -1,22 +1,29 @@
 package whiterabbit;
 
-import com.sun.codemodel.internal.JAnnotationArrayMember;
+<<<<<<< HEAD
+import whiterabbit.JeffersonAirplane.Printer;
 
 public class JeffersonAirplane {
-<<<<<<< HEAD
-     
-	
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		String test1 = "You’ve just been name project manager on the new \n" +
-	"ASTRO project that is slated to start next week.\n"+
-				"On your team is Tom the Tester, \n" +
-	"David, Daniel,and Debbie the Developers,\n"+
-				"Bob the Business Analyst, and Uma the UX Designer.\n"+
-	"A great group of highly experienced people\n"+
-				"and some of the best in the company.\n"+
+=======
+public class JeffersonAirplane {
+    public static final String WELCOME = "Welcome.  My name is Hume.  I am an educational computer simulation.  " +
+            "I�m your guide to the Agile world.\n\nIn order the determine if Agile is right for you, I need to know " +
+            "how you�ll deal with the following scenarios. These are real-life experiences from Agile projects.  " +
+            "How you choose to deal with these will tell me if you�re truly ready to be on an Agile team.";
+
+>>>>>>> 131f8e262b0ca4d799e8385a25a839e383849af9
+    private final Printer printer;
+
+	public static final String WELCOME = "Greetings, Earthling!";
+
+
+    String test1 = "You’ve just been name project manager on the new \n" +
+"ASTRO project that is slated to start next week.\n"+
+            "On your team is Tom the Tester, \n" +
+"David, Daniel,and Debbie the Developers,\n"+
+            "Bob the Business Analyst, and Uma the UX Designer.\n"+
+"A great group of highly experienced people\n"+
+            "and some of the best in the company.\n"+
 
 "However...turns out Tom is currently located in building\n"+
 "C down the road, David and Daniel and Debbie are together \n"+
@@ -25,36 +32,26 @@ public class JeffersonAirplane {
 "And Charlie the Customer is located on the 6th floor of \n"+
 "building D.  Below are the available space/configuration options.\n"+
 "It’s up to you to choose the best working set up for your team.";
-		Question question = new Question(test1);
-		question.addAnswer("A) Team Room 231 - located on the 3rd floor in building F (your building).  The developers can move in right away because it’s already wired.  However, Charlie the Customer can only be in the building on Tuesdays from 9:00-11:30 and Tom will need 45 min every morning and evening for travel.");
-		question.addAnswer("B) Conference Room A - located in building K.  This room is an old conference room “with potential”.  Charles can be there three times a week.  Developers need two days to set up.  and Tom needs 30 min of travel time every morning and evening.  There is an old conference table and chairs and it will take two weeks for new furniture..");
-		question.addAnswer("C) Team Room Orange - located on the 2nd floor in building D (same building as Charlie) and is the nicest team space.  However, it will take the developers three days to move, Tom will need hour every morning and evening for travel, and Bob will need 30 min notice to get there and can spend 3-4 hours a day.");
-		question.addAnswer("Enter your choice, A, B, or C, below:");
 
-		
-		
-		
-		System.out.println(question.toString());
-=======
-    public static final String WELCOME = "Greetings, Earthling!";
-    private final Printer printer;
 
     public JeffersonAirplane() {
         printer = new Printer();
     }
 
+    
+    
+    
     public JeffersonAirplane(Printer printer) {
-        this.printer = printer;
-    }
+		this.printer = printer;
+	}
 
-    public static void main(String[] args) {
+
+	public static void main(String[] args) {
         new JeffersonAirplane().run();
->>>>>>> c4c5e23d2cb5db1c2421c0812880935889dc84ee
 	}
 
     void run() {
         printer.print(WELCOME);
-        String test1 = "How sure are you that you want to be doing Agile development?";
         Question question = new Question(test1);
         question.addAnswer("A) very sure.");
         question.addAnswer("B) kind of sure.");

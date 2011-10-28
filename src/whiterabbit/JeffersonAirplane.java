@@ -1,11 +1,14 @@
 package whiterabbit;
-
 import whiterabbit.JeffersonAirplane.Printer;
 
 public class JeffersonAirplane {
-    private final Printer printer;
+    public static final String WELCOME = "Welcome.  My name is Hume.  I am an educational computer simulation.  " +
+            "Im your guide to the Agile world.\n\nIn order the determine if Agile is right for you, I need to know " +
+            "how youÕll deal with the following scenarios. These are real-life experiences from Agile projects.  " +
+            "How you choose to deal with these will tell me if youÕre truly ready to be on an Agile team.";
 
-	public static final String WELCOME = "Greetings, Earthling!";
+
+    private final Printer printer;
 
 
     String test1 = "You’ve just been name project manager on the new \n" +
@@ -29,15 +32,11 @@ public class JeffersonAirplane {
         printer = new Printer();
     }
 
-    
-    
-    
     public JeffersonAirplane(Printer printer) {
-		this.printer = printer;
-	}
+        this.printer = printer;
+    }
 
-
-	public static void main(String[] args) {
+    public static void main(String[] args) {
         new JeffersonAirplane().run();
 	}
 
