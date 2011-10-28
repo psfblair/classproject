@@ -1,0 +1,8 @@
+build/
+.svn
+<<<<<<< HEAD
+*.jar
+=======
+classproject.jar
+out/
+>>>>>>> c4c5e23d2cb5db1c2421c0812880935889dc84ee

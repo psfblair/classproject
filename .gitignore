@@ -1,3 +1,4 @@
 build/
 .svn
-*.jar
+classproject.jar
+out/
